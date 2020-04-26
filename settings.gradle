@@ -1,2 +1,4 @@
 include ':app'
 rootProject.name='AlMoyaedTech'
+include ':openbankinglib'
+include ':budgetapplib'

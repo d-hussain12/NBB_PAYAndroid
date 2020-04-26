@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/arrow_button_background"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/arrow_button_background">
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/arrow_button_background"
+            android:onClick="onSlideViewButtonClick"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"
+
+            android:layout_alignParentRight="true">
+        </ImageButton>
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:text="Click here"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:fontFamily="@font/baloo_b"
+
+            >
+        </TextView>
+    </RelativeLayout>
+
+
+</LinearLayout>

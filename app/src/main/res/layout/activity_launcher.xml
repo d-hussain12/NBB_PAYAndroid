@@ -1,19 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/colorWhite">
+    <ImageView
+        android:id="@+id/bimageView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="centerInside"
+        android:gravity="center"
+        android:layout_margin="0dp"
+
+
+        android:src="@drawable/tarabut"
+        />
 
     <ImageView
-        android:id="@+id/aquaplayicon"
-        android:src="@drawable/download"
+        android:id="@+id/loading_icon"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:onClick="onClickGirl"
-        android:layout_centerHorizontal="true"
-        android:paddingRight="3dip"
-        android:layout_marginTop="120dp"
-        android:gravity="center" />
+        android:src="@drawable/progress"/>
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="Loading"
+        android:gravity="center"
+        android:textSize="18dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dip"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/loading_icon"/>
+
+</LinearLayout>

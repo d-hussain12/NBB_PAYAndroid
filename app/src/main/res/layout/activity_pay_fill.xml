@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#d5d5d5"
+    tools:context="com.tarabut.nbbpayments.Pay_fill">
+
+    <LinearLayout
+        android:id="@+id/groupNumbers0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Select Account to Debit"
+            android:textSize="16sp"
+            app:fontFamily="@font/baloo_b" ></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/groupNumbers1"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    <Spinner
+        android:id="@+id/simpleSpinner"
+        android:layout_width="match_parent"
+        android:background="@drawable/spinner_bg"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:theme="@style/SpinnerTheme"
+        android:layout_centerHorizontal="true"
+       />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/groupNumbers2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Select Account to Credit"
+            android:textSize="16sp"
+            app:fontFamily="@font/baloo_b"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/groupNumbers3"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Spinner
+            android:id="@+id/simpleSpinner2"
+            android:layout_width="match_parent"
+            android:background="@drawable/spinner_bg"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:theme="@style/SpinnerTheme"
+            android:layout_centerHorizontal="true"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/groupNumbers5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Enter your CPR"
+            android:textSize="16sp"
+            app:fontFamily="@font/baloo_b" ></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/et_cpr"
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:inputType="numberDecimal"
+            android:paddingLeft="15dp"
+            android:text="861072952"
+            android:theme="@style/SpinnerTheme"
+            android:layout_centerHorizontal="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupNumbers4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Enter the Amount in BHD"
+            android:textSize="16sp"
+            app:fontFamily="@font/baloo_b" ></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:inputType="numberDecimal"
+            android:paddingLeft="15dp"
+            android:theme="@style/SpinnerTheme"
+            android:layout_centerHorizontal="true"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="horizontal" >
+
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:background="@drawable/editxt_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Cancel"
+            android:textAllCaps="true"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            app:fontFamily="@font/baloo_b"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:background="@drawable/editxt_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Pay"
+            android:layout_margin="5dp"
+            app:fontFamily="@font/baloo_b"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+</LinearLayout>

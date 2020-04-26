@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="#ffffff">
+    <ImageView
+        android:id="@+id/bimageView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="centerInside"
+        android:gravity="center"
+        android:layout_margin="0dp"
+
+        android:src="@drawable/tarabut"
+        />
+
+    <ImageView
+        android:id="@+id/loading_icon"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/progress"/>
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_gravity="center"
+        android:text="Loading"
+        android:gravity="center"
+        android:textSize="18dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dip"
+        android:textColor="#000000"
+        android:layout_below="@+id/loading_icon"/>
+</LinearLayout>

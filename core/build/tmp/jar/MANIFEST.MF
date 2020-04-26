@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+tokenio-version: 2.8.6
+tokenio-artifact: io.token.sdk
+tokenio-git-branch: master
+tokenio-git-sha: edddc46
+tokenio-build-machine: admins-MacBook-Pro.local
+
